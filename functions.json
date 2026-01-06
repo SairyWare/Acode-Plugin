@@ -1,0 +1,483 @@
+[
+    {
+        "caption": "setclipboard",
+        "value": "setclipboard($1)",
+        "meta": "exploit_globals",
+        "score": 1500,
+        "description": "Copy text to clipboard"
+    },
+    {
+        "caption": "printconsole",
+        "value": "printconsole(\"$1\", $2)",
+        "meta": "exploit_globals",
+        "score": 1400,
+        "description": "Print to exploit console"
+    },
+    {
+        "caption": "rconsoleprint",
+        "value": "rconsoleprint(\"$1\n\")",
+        "meta": "synapse",
+        "score": 1600,
+        "description": "Synapse X console print"
+    },
+    {
+        "caption": "rconsoleerr",
+        "value": "rconsoleerr(\"ERROR: $1\n\")",
+        "meta": "synapse",
+        "score": 1550,
+        "description": "Synapse X error print"
+    },
+    {
+        "caption": "writefile",
+        "value": "writefile(\"$1\", \"$2\")",
+        "meta": "exploit_filesystem",
+        "score": 1700,
+        "description": "Write to file"
+    },
+    {
+        "caption": "readfile",
+        "value": "readfile(\"$1\")",
+        "meta": "exploit_filesystem",
+        "score": 1650,
+        "description": "Read from file"
+    },
+    {
+        "caption": "listfiles",
+        "value": "listfiles(\"$1\")",
+        "meta": "exploit_filesystem",
+        "score": 1600,
+        "description": "List directory files"
+    },
+    {
+        "caption": "loadstring",
+        "value": "loadstring(game:HttpGet(\"$1\"))()",
+        "meta": "execution",
+        "score": 2000,
+        "description": "Execute remote script"
+    },
+    {
+        "caption": "getgenv",
+        "value": "getgenv().$1",
+        "meta": "environment",
+        "score": 1450,
+        "description": "Get global environment"
+    },
+    {
+        "caption": "getrenv",
+        "value": "getrenv().$1",
+        "meta": "environment",
+        "score": 1450,
+        "description": "Get Roblox environment"
+    },
+    {
+        "caption": "getreg",
+        "value": "getreg()",
+        "meta": "registry",
+        "score": 1300,
+        "description": "Get registry"
+    },
+    {
+        "caption": "getgc",
+        "value": "for i,v in pairs(getgc()) do\n    $1\nend",
+        "meta": "garbage_collection",
+        "score": 1750,
+        "description": "Get all garbage collected objects"
+    },
+    {
+        "caption": "getinstances",
+        "value": "for i,v in pairs(getinstances()) do\n    $1\nend",
+        "meta": "instances",
+        "score": 1700,
+        "description": "Get all instances"
+    },
+    {
+        "caption": "getnilinstances",
+        "value": "for i,v in pairs(getnilinstances()) do\n    $1\nend",
+        "meta": "instances",
+        "score": 1650,
+        "description": "Get nil instances"
+    },
+    {
+        "caption": "getscripts",
+        "value": "for i,v in pairs(getscripts()) do\n    $1\nend",
+        "meta": "scripts",
+        "score": 1600,
+        "description": "Get all scripts"
+    },
+    {
+        "caption": "getloadedmodules",
+        "value": "for i,v in pairs(getloadedmodules()) do\n    $1\nend",
+        "meta": "modules",
+        "score": 1550,
+        "description": "Get loaded modules"
+    },
+    {
+        "caption": "firesignal",
+        "value": "firesignal($1, $2)",
+        "meta": "signals",
+        "score": 1800,
+        "description": "Fire a signal"
+    },
+    {
+        "caption": "fireclickdetector",
+        "value": "fireclickdetector($1, $2)",
+        "meta": "click_detector",
+        "score": 1600,
+        "description": "Fire click detector"
+    },
+    {
+        "caption": "firetouchinterest",
+        "value": "firetouchinterest($1, $2, $3)",
+        "meta": "touch",
+        "score": 1650,
+        "description": "Fire touch interest"
+    },
+    {
+        "caption": "hookfunction",
+        "value": "local old = hookfunction($1, function(...)\n    $2\n    return old(...)\nend)",
+        "meta": "hooking",
+        "score": 1900,
+        "description": "Hook a function"
+    },
+    {
+        "caption": "newcclosure",
+        "value": "newcclosure(function()\n    $1\nend)",
+        "meta": "closures",
+        "score": 1700,
+        "description": "Create C closure"
+    },
+    {
+        "caption": "checkcaller",
+        "value": "if not checkcaller() then\n    $1\nend",
+        "meta": "security",
+        "score": 1550,
+        "description": "Check if called from exploit"
+    },
+    {
+        "caption": "is_protosmasher_caller",
+        "value": "if is_protosmasher_caller() then\n    $1\nend",
+        "meta": "protosmasher",
+        "score": 1450,
+        "description": "ProtoSmasher caller check"
+    },
+    {
+        "caption": "is_sirhurt_closure",
+        "value": "if is_sirhurt_closure() then\n    $1\nend",
+        "meta": "sirhurt",
+        "score": 1450,
+        "description": "SirHurt closure check"
+    },
+    {
+        "caption": "is_synapse_function",
+        "value": "if is_synapse_function() then\n    $1\nend",
+        "meta": "synapse",
+        "score": 1450,
+        "description": "Synapse function check"
+    },
+    {
+        "caption": "getconnections",
+        "value": "for i,v in pairs(getconnections($1)) do\n    v:Fire($2)\nend",
+        "meta": "connections",
+        "score": 1850,
+        "description": "Get event connections"
+    },
+    {
+        "caption": "request",
+        "value": "request({\n    Url = \"$1\",\n    Method = \"GET\"\n})",
+        "meta": "http",
+        "score": 1600,
+        "description": "HTTP request"
+    },
+    {
+        "caption": "http_request",
+        "value": "http_request({\n    url = \"$1\",\n    method = \"GET\"\n})",
+        "meta": "http_synapse",
+        "score": 1550,
+        "description": "Synapse HTTP request"
+    },
+    {
+        "caption": "crypt",
+        "value": "crypt.$1($2)",
+        "meta": "cryptography",
+        "score": 1700,
+        "description": "Cryptography functions"
+    },
+    {
+        "caption": "crypt.base64.encode",
+        "value": "crypt.base64.encode(\"$1\")",
+        "meta": "cryptography",
+        "score": 1650
+    },
+    {
+        "caption": "crypt.base64.decode",
+        "value": "crypt.base64.decode(\"$1\")",
+        "meta": "cryptography",
+        "score": 1650
+    },
+    {
+        "caption": "Drawing.new",
+        "value": "local $1 = Drawing.new(\"$2\")",
+        "meta": "drawing",
+        "score": 1750,
+        "description": "Create drawing object"
+    },
+    {
+        "caption": "debug.getupvalue",
+        "value": "debug.getupvalue($1, $2)",
+        "meta": "debug",
+        "score": 1800,
+        "description": "Get upvalue"
+    },
+    {
+        "caption": "debug.setupvalue",
+        "value": "debug.setupvalue($1, $2, $3)",
+        "meta": "debug",
+        "score": 1800,
+        "description": "Set upvalue"
+    },
+    {
+        "caption": "debug.getconstant",
+        "value": "debug.getconstant($1, $2)",
+        "meta": "debug",
+        "score": 1750,
+        "description": "Get constant"
+    },
+    {
+        "caption": "debug.setconstant",
+        "value": "debug.setconstant($1, $2, $3)",
+        "meta": "debug",
+        "score": 1750,
+        "description": "Set constant"
+    },
+    {
+        "caption": "mouse1click",
+        "value": "mouse1click($1, $2)",
+        "meta": "mouse",
+        "score": 1600,
+        "description": "Simulate mouse click"
+    },
+    {
+        "caption": "mouse1press",
+        "value": "mouse1press()",
+        "meta": "mouse",
+        "score": 1550
+    },
+    {
+        "caption": "mouse1release",
+        "value": "mouse1release()",
+        "meta": "mouse",
+        "score": 1550
+    },
+    {
+        "caption": "keypress",
+        "value": "keypress($1)",
+        "meta": "keyboard",
+        "score": 1550,
+        "description": "Simulate key press"
+    },
+    {
+        "caption": "keyrelease",
+        "value": "keyrelease($1)",
+        "meta": "keyboard",
+        "score": 1550,
+        "description": "Simulate key release"
+    },
+    {
+        "caption": "mousemove",
+        "value": "mousemove($1, $2)",
+        "meta": "mouse",
+        "score": 1550,
+        "description": "Move mouse"
+    },
+    {
+        "caption": "mousescroll",
+        "value": "mousescroll($1)",
+        "meta": "mouse",
+        "score": 1500,
+        "description": "Mouse scroll"
+    },
+    {
+        "caption": "iswindowactive",
+        "value": "if iswindowactive() then\n    $1\nend",
+        "meta": "window",
+        "score": 1400,
+        "description": "Check if window active"
+    },
+    {
+        "caption": "setfpscap",
+        "value": "setfpscap($1)",
+        "meta": "performance",
+        "score": 1450,
+        "description": "Set FPS cap"
+    },
+    {
+        "caption": "identifyexecutor",
+        "value": "identifyexecutor()",
+        "meta": "executor",
+        "score": 1300,
+        "description": "Get executor name"
+    },
+    {
+        "caption": "getcustomasset",
+        "value": "getcustomasset(\"$1\")",
+        "meta": "assets",
+        "score": 1500,
+        "description": "Get custom asset"
+    },
+    {
+        "caption": "saveinstance",
+        "value": "saveinstance({\n    $1\n})",
+        "meta": "instance",
+        "score": 1850,
+        "description": "Save game instance"
+    },
+    {
+        "caption": "messagebox",
+        "value": "messagebox(\"$1\", \"$2\", $3)",
+        "meta": "ui",
+        "score": 1400,
+        "description": "Show message box"
+    },
+    {
+        "caption": "toclipboard",
+        "value": "toclipboard(\"$1\")",
+        "meta": "clipboard",
+        "score": 1350,
+        "description": "Copy to clipboard"
+    },
+    {
+        "caption": "delfile",
+        "value": "delfile(\"$1\")",
+        "meta": "filesystem",
+        "score": 1600,
+        "description": "Delete file"
+    },
+    {
+        "caption": "isfile",
+        "value": "if isfile(\"$1\") then\n    $2\nend",
+        "meta": "filesystem",
+        "score": 1550,
+        "description": "Check if file exists"
+    },
+    {
+        "caption": "isolder",
+        "value": "if isolder($1) then\n    $2\nend",
+        "meta": "age",
+        "score": 1300,
+        "description": "Check if account is old"
+    },
+    {
+        "caption": "hookmetamethod",
+        "value": "local old = hookmetamethod($1, \"$2\", function(...)\n    $3\n    return old(...)\nend)",
+        "meta": "metamethods",
+        "score": 1950,
+        "description": "Hook metamethod"
+    },
+    {
+        "caption": "clonefunction",
+        "value": "clonefunction($1)",
+        "meta": "functions",
+        "score": 1700,
+        "description": "Clone function"
+    },
+    {
+        "caption": "getnamecallmethod",
+        "value": "local method = getnamecallmethod()\nif method == \"$1\" then\n    $2\nend",
+        "meta": "namecall",
+        "score": 1850,
+        "description": "Get namecall method"
+    },
+    {
+        "caption": "getrawmetatable",
+        "value": "getrawmetatable($1)",
+        "meta": "metatables",
+        "score": 1800,
+        "description": "Get raw metatable"
+    },
+    {
+        "caption": "setrawmetatable",
+        "value": "setrawmetatable($1, $2)",
+        "meta": "metatables",
+        "score": 1800,
+        "description": "Set raw metatable"
+    },
+    {
+        "caption": "makereadonly",
+        "value": "makereadonly($1)",
+        "meta": "tables",
+        "score": 1600,
+        "description": "Make table readonly"
+    },
+    {
+        "caption": "makewriteable",
+        "value": "makewriteable($1)",
+        "meta": "tables",
+        "score": 1600,
+        "description": "Make table writeable"
+    },
+    {
+        "category": "basic_functions",
+        "functions": [
+            {
+                "caption": "print",
+                "value": "print(\"$1\")",
+                "score": 1000
+            },
+            {
+                "caption": "warn",
+                "value": "warn(\"$1\")",
+                "score": 1000
+            },
+            {
+                "caption": "error",
+                "value": "error(\"$1\")",
+                "score": 1000
+            }
+        ]
+    },
+    {
+        "category": "game_interaction",
+        "functions": [
+            {
+                "caption": "game:GetService",
+                "value": "game:GetService(\"$1\")",
+                "score": 1100
+            },
+            {
+                "caption": "game:HttpGet",
+                "value": "game:HttpGet(\"$1\")",
+                "score": 1200
+            },
+            {
+                "caption": "game:HttpGetAsync",
+                "value": "game:HttpGetAsync(\"$1\")",
+                "score": 1200
+            },
+            {
+                "caption": "game:GetObjects",
+                "value": "game:GetObjects(\"$1\")",
+                "score": 1300
+            }
+        ]
+    },
+    {
+        "category": "player_functions",
+        "functions": [
+            {
+                "caption": "game.Players.LocalPlayer",
+                "value": "game.Players.LocalPlayer",
+                "score": 1100
+            },
+            {
+                "caption": "GetPlayerFromCharacter",
+                "value": "game.Players:GetPlayerFromCharacter($1)",
+                "score": 1200
+            },
+            {
+                "caption": "GetPlayers",
+                "value": "game.Players:GetPlayers()",
+                "score": 1100
+            }
+        ]
+    }
+]

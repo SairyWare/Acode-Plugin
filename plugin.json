@@ -1,0 +1,19 @@
+{
+  "id": "roblox.luau.complete.pro",
+  "name": "Luau Complete PRO",
+  "main": "main.js",
+  "version": "1.2.5",
+  "readme": "readme.md",
+  "changelogs": "changelogs.md",
+  "files": [
+    "main.js",
+    "worker.js",
+    "keywords.json",
+    "datatypes.json",
+    "functions.json",
+    "readme.md",
+    "changelogs.md"
+  ],
+  "minVersionCode": 290,
+  "author": "Alert3z"
+}

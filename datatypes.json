@@ -1,0 +1,488 @@
+[
+    {
+        "caption": "Vector3.new",
+        "value": "Vector3.new($1, $2, $3)",
+        "meta": "datatype_math",
+        "score": 1100,
+        "description": "Create new Vector3"
+    },
+    {
+        "caption": "Vector2.new",
+        "value": "Vector2.new($1, $2)",
+        "meta": "datatype_math",
+        "score": 1100,
+        "description": "Create new Vector2"
+    },
+    {
+        "caption": "CFrame.new",
+        "value": "CFrame.new($1, $2, $3)",
+        "meta": "datatype_transform",
+        "score": 1150,
+        "description": "Create new CFrame"
+    },
+    {
+        "caption": "CFrame.Angles",
+        "value": "CFrame.Angles($1, $2, $3)",
+        "meta": "datatype_transform",
+        "score": 1200,
+        "description": "Create CFrame from angles"
+    },
+    {
+        "caption": "CFrame.fromMatrix",
+        "value": "CFrame.fromMatrix($1, $2, $3, $4)",
+        "meta": "datatype_transform",
+        "score": 1250,
+        "description": "Create CFrame from matrix"
+    },
+    {
+        "caption": "Color3.new",
+        "value": "Color3.new($1, $2, $3)",
+        "meta": "datatype_color",
+        "score": 1100,
+        "description": "Create new Color3"
+    },
+    {
+        "caption": "Color3.fromRGB",
+        "value": "Color3.fromRGB($1, $2, $3)",
+        "meta": "datatype_color",
+        "score": 1150,
+        "description": "Create Color3 from RGB"
+    },
+    {
+        "caption": "Color3.fromHSV",
+        "value": "Color3.fromHSV($1, $2, $3)",
+        "meta": "datatype_color",
+        "score": 1200,
+        "description": "Create Color3 from HSV"
+    },
+    {
+        "caption": "Color3.fromHex",
+        "value": "Color3.fromHex(\"$1\")",
+        "meta": "datatype_color",
+        "score": 1250,
+        "description": "Create Color3 from hex"
+    },
+    {
+        "caption": "BrickColor.new",
+        "value": "BrickColor.new(\"$1\")",
+        "meta": "datatype_color",
+        "score": 1050,
+        "description": "Create new BrickColor"
+    },
+    {
+        "caption": "UDim.new",
+        "value": "UDim.new($1, $2)",
+        "meta": "datatype_gui",
+        "score": 1050,
+        "description": "Create new UDim"
+    },
+    {
+        "caption": "UDim2.new",
+        "value": "UDim2.new($1, $2, $3, $4)",
+        "meta": "datatype_gui",
+        "score": 1150,
+        "description": "Create new UDim2"
+    },
+    {
+        "caption": "UDim2.fromScale",
+        "value": "UDim2.fromScale($1, $2)",
+        "meta": "datatype_gui",
+        "score": 1200,
+        "description": "Create UDim2 from scale"
+    },
+    {
+        "caption": "UDim2.fromOffset",
+        "value": "UDim2.fromOffset($1, $2)",
+        "meta": "datatype_gui",
+        "score": 1200,
+        "description": "Create UDim2 from offset"
+    },
+    {
+        "caption": "Region3.new",
+        "value": "Region3.new($1, $2)",
+        "meta": "datatype_spatial",
+        "score": 1300,
+        "description": "Create new Region3"
+    },
+    {
+        "caption": "Region3int16.new",
+        "value": "Region3int16.new($1, $2)",
+        "meta": "datatype_spatial",
+        "score": 1300,
+        "description": "Create new Region3int16"
+    },
+    {
+        "caption": "Ray.new",
+        "value": "Ray.new($1, $2)",
+        "meta": "datatype_physics",
+        "score": 1250,
+        "description": "Create new Ray"
+    },
+    {
+        "caption": "NumberSequence.new",
+        "value": "NumberSequence.new($1)",
+        "meta": "datatype_sequence",
+        "score": 1200,
+        "description": "Create NumberSequence"
+    },
+    {
+        "caption": "NumberSequenceKeypoint.new",
+        "value": "NumberSequenceKeypoint.new($1, $2)",
+        "meta": "datatype_sequence",
+        "score": 1250,
+        "description": "Create NumberSequenceKeypoint"
+    },
+    {
+        "caption": "ColorSequence.new",
+        "value": "ColorSequence.new($1)",
+        "meta": "datatype_sequence",
+        "score": 1200,
+        "description": "Create ColorSequence"
+    },
+    {
+        "caption": "ColorSequenceKeypoint.new",
+        "value": "ColorSequenceKeypoint.new($1, $2)",
+        "meta": "datatype_sequence",
+        "score": 1250,
+        "description": "Create ColorSequenceKeypoint"
+    },
+    {
+        "caption": "NumberRange.new",
+        "value": "NumberRange.new($1, $2)",
+        "meta": "datatype_range",
+        "score": 1150,
+        "description": "Create NumberRange"
+    },
+    {
+        "caption": "Rect.new",
+        "value": "Rect.new($1, $2)",
+        "meta": "datatype_gui",
+        "score": 1100,
+        "description": "Create Rect"
+    },
+    {
+        "caption": "Faces.new",
+        "value": "Faces.new($1)",
+        "meta": "datatype_enum",
+        "score": 1300,
+        "description": "Create Faces"
+    },
+    {
+        "caption": "Axes.new",
+        "value": "Axes.new($1)",
+        "meta": "datatype_enum",
+        "score": 1300,
+        "description": "Create Axes"
+    },
+    {
+        "caption": "NormalId.new",
+        "value": "NormalId.$1",
+        "meta": "datatype_enum",
+        "score": 1200,
+        "description": "NormalId enum"
+    },
+    {
+        "caption": "Material.new",
+        "value": "Enum.Material.$1",
+        "meta": "datatype_enum",
+        "score": 1200,
+        "description": "Material enum"
+    },
+    {
+        "caption": "Font.new",
+        "value": "Font.new(\"$1\", $2, Enum.FontWeight.$3)",
+        "meta": "datatype_gui",
+        "score": 1350,
+        "description": "Create Font"
+    },
+    {
+        "caption": "Font.fromEnum",
+        "value": "Font.fromEnum(Enum.Font.$1)",
+        "meta": "datatype_gui",
+        "score": 1300,
+        "description": "Create Font from enum"
+    },
+    {
+        "caption": "TweenInfo.new",
+        "value": "TweenInfo.new($1, Enum.EasingStyle.$2, Enum.EasingDirection.$3)",
+        "meta": "datatype_animation",
+        "score": 1250,
+        "description": "Create TweenInfo"
+    },
+    {
+        "caption": "DateTime.fromUnixTimestamp",
+        "value": "DateTime.fromUnixTimestamp($1)",
+        "meta": "datatype_time",
+        "score": 1200,
+        "description": "Create DateTime from Unix timestamp"
+    },
+    {
+        "caption": "DateTime.fromLocalTime",
+        "value": "DateTime.fromLocalTime($1, $2, $3, $4, $5, $6)",
+        "meta": "datatype_time",
+        "score": 1300,
+        "description": "Create DateTime from local time"
+    },
+    {
+        "caption": "DateTime.now",
+        "value": "DateTime.now()",
+        "meta": "datatype_time",
+        "score": 1100,
+        "description": "Get current DateTime"
+    },
+    {
+        "caption": "Random.new",
+        "value": "Random.new($1)",
+        "meta": "datatype_random",
+        "score": 1150,
+        "description": "Create Random object"
+    },
+    {
+        "caption": "DockWidgetPluginGuiInfo.new",
+        "value": "DockWidgetPluginGuiInfo.new($1, $2, $3, $4, $5, $6, $7)",
+        "meta": "datatype_plugin",
+        "score": 1400,
+        "description": "Create DockWidgetPluginGuiInfo"
+    },
+    {
+        "caption": "Instance.new",
+        "value": "Instance.new(\"$1\")",
+        "meta": "datatype_instance",
+        "score": 1000,
+        "description": "Create new Instance"
+    },
+    {
+        "caption": "RBXScriptSignal.new",
+        "value": "RBXScriptSignal.new()",
+        "meta": "datatype_signal",
+        "score": 1350,
+        "description": "Create RBXScriptSignal"
+    },
+    {
+        "caption": "RBXScriptConnection.new",
+        "value": "RBXScriptConnection.new()",
+        "meta": "datatype_signal",
+        "score": 1350,
+        "description": "Create RBXScriptConnection"
+    },
+    {
+        "caption": "PathWaypoint.new",
+        "value": "PathWaypoint.new($1, $2)",
+        "meta": "datatype_pathfinding",
+        "score": 1350,
+        "description": "Create PathWaypoint"
+    },
+    {
+        "caption": "CatalogSearchParams.new",
+        "value": "CatalogSearchParams.new($1, $2, $3, $4)",
+        "meta": "datatype_catalog",
+        "score": 1400,
+        "description": "Create CatalogSearchParams"
+    },
+    {
+        "caption": "OverlapParams.new",
+        "value": "OverlapParams.new()",
+        "meta": "datatype_physics",
+        "score": 1300,
+        "description": "Create OverlapParams"
+    },
+    {
+        "caption": "RaycastParams.new",
+        "value": "RaycastParams.new()",
+        "meta": "datatype_physics",
+        "score": 1300,
+        "description": "Create RaycastParams"
+    },
+    {
+        "caption": "PhysicsCastParams.new",
+        "value": "PhysicsCastParams.new()",
+        "meta": "datatype_physics",
+        "score": 1300,
+        "description": "Create PhysicsCastParams"
+    },
+    {
+        "caption": "Exploit Data Types",
+        "value": "",
+        "meta": "exploit_datatypes",
+        "score": 1500,
+        "description": "Exploit-specific data types"
+    },
+    {
+        "caption": "Drawing::Text",
+        "value": "Drawing.new(\"Text\")",
+        "meta": "drawing_datatype",
+        "score": 1450,
+        "description": "Create Drawing Text object"
+    },
+    {
+        "caption": "Drawing::Line",
+        "value": "Drawing.new(\"Line\")",
+        "meta": "drawing_datatype",
+        "score": 1450,
+        "description": "Create Drawing Line object"
+    },
+    {
+        "caption": "Drawing::Circle",
+        "value": "Drawing.new(\"Circle\")",
+        "meta": "drawing_datatype",
+        "score": 1450,
+        "description": "Create Drawing Circle object"
+    },
+    {
+        "caption": "Drawing::Square",
+        "value": "Drawing.new(\"Square\")",
+        "meta": "drawing_datatype",
+        "score": 1450,
+        "description": "Create Drawing Square object"
+    },
+    {
+        "caption": "Drawing::Image",
+        "value": "Drawing.new(\"Image\")",
+        "meta": "drawing_datatype",
+        "score": 1450,
+        "description": "Create Drawing Image object"
+    },
+    {
+        "caption": "Drawing::Triangle",
+        "value": "Drawing.new(\"Triangle\")",
+        "meta": "drawing_datatype",
+        "score": 1450,
+        "description": "Create Drawing Triangle object"
+    },
+    {
+        "caption": "crypt::Key",
+        "value": "crypt.generatekey()",
+        "meta": "crypt_datatype",
+        "score": 1500,
+        "description": "Generate cryptographic key"
+    },
+    {
+        "caption": "crypt::IV",
+        "value": "crypt.generateiv()",
+        "meta": "crypt_datatype",
+        "score": 1500,
+        "description": "Generate initialization vector"
+    },
+    {
+        "caption": "http::Request",
+        "value": "{\n    Url = \"$1\",\n    Method = \"GET\",\n    Headers = {},\n    Body = nil\n}",
+        "meta": "http_datatype",
+        "score": 1400,
+        "description": "HTTP request table structure"
+    },
+    {
+        "caption": "saveinstance::Options",
+        "value": "{\n    savetype = \"$1\",\n    decompile = $2,\n    scripts = $3,\n    nocache = $4\n}",
+        "meta": "exploit_datatype",
+        "score": 1500,
+        "description": "SaveInstance options table"
+    },
+    {
+        "caption": "hookfunction::Wrapper",
+        "value": "function(...)\n    $1\n    return original(...)\nend",
+        "meta": "exploit_datatype",
+        "score": 1550,
+        "description": "Hook function wrapper"
+    },
+    {
+        "caption": "getconnections::Array",
+        "value": "getconnections($1)",
+        "meta": "exploit_datatype",
+        "score": 1450,
+        "description": "Array of connections"
+    },
+    {
+        "caption": "getgc::Array",
+        "value": "getgc()",
+        "meta": "exploit_datatype",
+        "score": 1450,
+        "description": "Array of garbage collected objects"
+    },
+    {
+        "caption": "getinstances::Array",
+        "value": "getinstances()",
+        "meta": "exploit_datatype",
+        "score": 1450,
+        "description": "Array of all instances"
+    },
+    {
+        "category": "enum_types",
+        "datatypes": [
+            {
+                "caption": "Enum.Font",
+                "value": "Enum.Font.$1",
+                "score": 1100
+            },
+            {
+                "caption": "Enum.FontWeight",
+                "value": "Enum.FontWeight.$1",
+                "score": 1100
+            },
+            {
+                "caption": "Enum.EasingStyle",
+                "value": "Enum.EasingStyle.$1",
+                "score": 1150
+            },
+            {
+                "caption": "Enum.EasingDirection",
+                "value": "Enum.EasingDirection.$1",
+                "score": 1150
+            },
+            {
+                "caption": "Enum.Material",
+                "value": "Enum.Material.$1",
+                "score": 1200
+            },
+            {
+                "caption": "Enum.NormalId",
+                "value": "Enum.NormalId.$1",
+                "score": 1200
+            },
+            {
+                "caption": "Enum.UserInputType",
+                "value": "Enum.UserInputType.$1",
+                "score": 1250
+            },
+            {
+                "caption": "Enum.KeyCode",
+                "value": "Enum.KeyCode.$1",
+                "score": 1250
+            }
+        ]
+    },
+    {
+        "category": "exploit_constants",
+        "datatypes": [
+            {
+                "caption": "IDENTITY",
+                "value": "IDENTITY",
+                "score": 1400,
+                "description": "Exploit identity constant"
+            },
+            {
+                "caption": "HIDDEN_IDENTITY",
+                "value": "HIDDEN_IDENTITY",
+                "score": 1400,
+                "description": "Hidden identity"
+            },
+            {
+                "caption": "PROTOSMASHER_LOADED",
+                "value": "PROTOSMASHER_LOADED",
+                "score": 1350,
+                "description": "ProtoSmasher check"
+            },
+            {
+                "caption": "SYNAPSE_LOADED",
+                "value": "SYNAPSE_LOADED",
+                "score": 1350,
+                "description": "Synapse check"
+            },
+            {
+                "caption": "SIRHURT_LOADED",
+                "value": "SIRHURT_LOADED",
+                "score": 1350,
+                "description": "SirHurt check"
+            }
+        ]
+    }
+]

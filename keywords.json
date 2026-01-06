@@ -1,0 +1,816 @@
+[
+    {
+        "category": "lua_keywords",
+        "keywords": [
+            {
+                "caption": "local",
+                "value": "local $1 = $2",
+                "meta": "keyword_declaration",
+                "score": 2000,
+                "description": "Declare local variable"
+            },
+            {
+                "caption": "function",
+                "value": "function $1($2)\n    $3\nend",
+                "meta": "keyword_declaration",
+                "score": 1950,
+                "description": "Define function"
+            },
+            {
+                "caption": "return",
+                "value": "return $1",
+                "meta": "keyword_control",
+                "score": 1900,
+                "description": "Return value from function"
+            },
+            {
+                "caption": "if then else",
+                "value": "if $1 then\n    $2\nelse\n    $3\nend",
+                "meta": "keyword_control",
+                "score": 1850,
+                "description": "If-else statement"
+            },
+            {
+                "caption": "if then elseif",
+                "value": "if $1 then\n    $2\nelseif $3 then\n    $4\nend",
+                "meta": "keyword_control",
+                "score": 1800,
+                "description": "If-elseif statement"
+            },
+            {
+                "caption": "for numeric",
+                "value": "for $1 = $2, $3, $4 do\n    $5\nend",
+                "meta": "keyword_loop",
+                "score": 1750,
+                "description": "Numeric for loop"
+            },
+            {
+                "caption": "for pairs",
+                "value": "for $1, $2 in pairs($3) do\n    $4\nend",
+                "meta": "keyword_loop",
+                "score": 1700,
+                "description": "Pairs iterator loop"
+            },
+            {
+                "caption": "for ipairs",
+                "value": "for $1, $2 in ipairs($3) do\n    $4\nend",
+                "meta": "keyword_loop",
+                "score": 1650,
+                "description": "Ipairs iterator loop"
+            },
+            {
+                "caption": "while",
+                "value": "while $1 do\n    $2\nend",
+                "meta": "keyword_loop",
+                "score": 1600,
+                "description": "While loop"
+            },
+            {
+                "caption": "repeat until",
+                "value": "repeat\n    $1\nuntil $2",
+                "meta": "keyword_loop",
+                "score": 1550,
+                "description": "Repeat-until loop"
+            },
+            {
+                "caption": "break",
+                "value": "break",
+                "meta": "keyword_control",
+                "score": 1500,
+                "description": "Break loop"
+            },
+            {
+                "caption": "continue",
+                "value": "continue",
+                "meta": "keyword_control",
+                "score": 1450,
+                "description": "Continue loop (Lua 5.4+)"
+            },
+            {
+                "caption": "goto",
+                "value": "goto $1",
+                "meta": "keyword_control",
+                "score": 1400,
+                "description": "Goto statement"
+            },
+            {
+                "caption": "do end",
+                "value": "do\n    $1\nend",
+                "meta": "keyword_block",
+                "score": 1350,
+                "description": "Do block"
+            },
+            {
+                "caption": "and",
+                "value": "and",
+                "meta": "keyword_operator",
+                "score": 1300,
+                "description": "Logical AND"
+            },
+            {
+                "caption": "or",
+                "value": "or",
+                "meta": "keyword_operator",
+                "score": 1300,
+                "description": "Logical OR"
+            },
+            {
+                "caption": "not",
+                "value": "not",
+                "meta": "keyword_operator",
+                "score": 1300,
+                "description": "Logical NOT"
+            },
+            {
+                "caption": "nil",
+                "value": "nil",
+                "meta": "keyword_value",
+                "score": 1250,
+                "description": "Nil value"
+            },
+            {
+                "caption": "true",
+                "value": "true",
+                "meta": "keyword_value",
+                "score": 1250,
+                "description": "Boolean true"
+            },
+            {
+                "caption": "false",
+                "value": "false",
+                "meta": "keyword_value",
+                "score": 1250,
+                "description": "Boolean false"
+            },
+            {
+                "caption": "self",
+                "value": "self",
+                "meta": "keyword_oop",
+                "score": 1200,
+                "description": "Self reference"
+            },
+            {
+                "caption": "in",
+                "value": "in",
+                "meta": "keyword_operator",
+                "score": 1150,
+                "description": "In operator"
+            }
+        ]
+    },
+    {
+        "category": "roblox_core",
+        "keywords": [
+            {
+                "caption": "game",
+                "value": "game",
+                "meta": "roblox_core",
+                "score": 1300,
+                "description": "Game DataModel"
+            },
+            {
+                "caption": "workspace",
+                "value": "workspace",
+                "meta": "roblox_core",
+                "score": 1300,
+                "description": "Workspace service"
+            },
+            {
+                "caption": "script",
+                "value": "script",
+                "meta": "roblox_core",
+                "score": 1250,
+                "description": "Current script"
+            },
+            {
+                "caption": "Instance.new",
+                "value": "Instance.new(\"$1\")",
+                "meta": "roblox_core_method",
+                "score": 1200,
+                "description": "Create new instance"
+            },
+            {
+                "caption": "GetService",
+                "value": "game:GetService(\"$1\")",
+                "meta": "roblox_core_method",
+                "score": 1200,
+                "description": "Get service"
+            },
+            {
+                "caption": "WaitForChild",
+                "value": "WaitForChild(\"$1\")",
+                "meta": "roblox_core_method",
+                "score": 1150,
+                "description": "Wait for child"
+            },
+            {
+                "caption": "FindFirstChild",
+                "value": "FindFirstChild(\"$1\")",
+                "meta": "roblox_core_method",
+                "score": 1150,
+                "description": "Find first child"
+            },
+            {
+                "caption": "Clone",
+                "value": "Clone()",
+                "meta": "roblox_core_method",
+                "score": 1100,
+                "description": "Clone instance"
+            },
+            {
+                "caption": "Destroy",
+                "value": "Destroy()",
+                "meta": "roblox_core_method",
+                "score": 1100,
+                "description": "Destroy instance"
+            },
+            {
+                "caption": "IsA",
+                "value": "IsA(\"$1\")",
+                "meta": "roblox_core_method",
+                "score": 1050,
+                "description": "Check instance type"
+            }
+        ]
+    },
+    {
+        "category": "roblox_services",
+        "keywords": [
+            {
+                "caption": "Players",
+                "value": "game:GetService(\"Players\")",
+                "meta": "roblox_service",
+                "score": 1100,
+                "description": "Players service"
+            },
+            {
+                "caption": "LocalPlayer",
+                "value": "game.Players.LocalPlayer",
+                "meta": "roblox_player",
+                "score": 1050,
+                "description": "Local player"
+            },
+            {
+                "caption": "RunService",
+                "value": "game:GetService(\"RunService\")",
+                "meta": "roblox_service",
+                "score": 1000,
+                "description": "Run service"
+            },
+            {
+                "caption": "HttpService",
+                "value": "game:GetService(\"HttpService\")",
+                "meta": "roblox_service",
+                "score": 1000,
+                "description": "HTTP service"
+            },
+            {
+                "caption": "TweenService",
+                "value": "game:GetService(\"TweenService\")",
+                "meta": "roblox_service",
+                "score": 1000,
+                "description": "Tween service"
+            },
+            {
+                "caption": "ReplicatedStorage",
+                "value": "game:GetService(\"ReplicatedStorage\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Replicated storage"
+            },
+            {
+                "caption": "ServerStorage",
+                "value": "game:GetService(\"ServerStorage\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Server storage"
+            },
+            {
+                "caption": "Lighting",
+                "value": "game:GetService(\"Lighting\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Lighting service"
+            },
+            {
+                "caption": "SoundService",
+                "value": "game:GetService(\"SoundService\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Sound service"
+            },
+            {
+                "caption": "StarterGui",
+                "value": "game:GetService(\"StarterGui\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Starter GUI"
+            },
+            {
+                "caption": "StarterPack",
+                "value": "game:GetService(\"StarterPack\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Starter pack"
+            },
+            {
+                "caption": "StarterPlayer",
+                "value": "game:GetService(\"StarterPlayer\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Starter player"
+            },
+            {
+                "caption": "TeleportService",
+                "value": "game:GetService(\"TeleportService\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Teleport service"
+            },
+            {
+                "caption": "MarketplaceService",
+                "value": "game:GetService(\"MarketplaceService\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Marketplace service"
+            },
+            {
+                "caption": "UserInputService",
+                "value": "game:GetService(\"UserInputService\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "User input service"
+            },
+            {
+                "caption": "ContextActionService",
+                "value": "game:GetService(\"ContextActionService\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Context action service"
+            },
+            {
+                "caption": "PathfindingService",
+                "value": "game:GetService(\"PathfindingService\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Pathfinding service"
+            },
+            {
+                "caption": "DataStoreService",
+                "value": "game:GetService(\"DataStoreService\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Data store service"
+            },
+            {
+                "caption": "Chat",
+                "value": "game:GetService(\"Chat\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Chat service"
+            },
+            {
+                "caption": "TestService",
+                "value": "game:GetService(\"TestService\")",
+                "meta": "roblox_service",
+                "score": 950,
+                "description": "Test service"
+            }
+        ]
+    },
+    {
+        "category": "exploit_core",
+        "keywords": [
+            {
+                "caption": "getgenv",
+                "value": "getgenv()",
+                "meta": "exploit_global",
+                "score": 1500,
+                "description": "Get global environment"
+            },
+            {
+                "caption": "getrawmetatable",
+                "value": "getrawmetatable($1)",
+                "meta": "exploit_metatable",
+                "score": 1450,
+                "description": "Get raw metatable"
+            },
+            {
+                "caption": "setreadonly",
+                "value": "setreadonly($1, $2)",
+                "meta": "exploit_metatable",
+                "score": 1400,
+                "description": "Set readonly"
+            },
+            {
+                "caption": "makewriteable",
+                "value": "makewriteable($1)",
+                "meta": "exploit_metatable",
+                "score": 1400,
+                "description": "Make writeable"
+            },
+            {
+                "caption": "makereadonly",
+                "value": "makereadonly($1)",
+                "meta": "exploit_metatable",
+                "score": 1400,
+                "description": "Make readonly"
+            },
+            {
+                "caption": "hookmetamethod",
+                "value": "hookmetamethod($1, \"$2\", function(...)\n    $3\n    return old(...)\nend)",
+                "meta": "exploit_hooking",
+                "score": 1550,
+                "description": "Hook metamethod"
+            },
+            {
+                "caption": "hookfunction",
+                "value": "hookfunction($1, function(...)\n    $2\n    return old(...)\nend)",
+                "meta": "exploit_hooking",
+                "score": 1550,
+                "description": "Hook function"
+            },
+            {
+                "caption": "newcclosure",
+                "value": "newcclosure(function()\n    $1\nend)",
+                "meta": "exploit_closure",
+                "score": 1500,
+                "description": "Create C closure"
+            },
+            {
+                "caption": "clonefunction",
+                "value": "clonefunction($1)",
+                "meta": "exploit_function",
+                "score": 1450,
+                "description": "Clone function"
+            },
+            {
+                "caption": "checkcaller",
+                "value": "checkcaller()",
+                "meta": "exploit_security",
+                "score": 1400,
+                "description": "Check caller"
+            },
+            {
+                "caption": "getnamecallmethod",
+                "value": "getnamecallmethod()",
+                "meta": "exploit_namecall",
+                "score": 1500,
+                "description": "Get namecall method"
+            },
+            {
+                "caption": "getgc",
+                "value": "getgc()",
+                "meta": "exploit_gc",
+                "score": 1350,
+                "description": "Get garbage collection"
+            },
+            {
+                "caption": "getreg",
+                "value": "getreg()",
+                "meta": "exploit_registry",
+                "score": 1350,
+                "description": "Get registry"
+            },
+            {
+                "caption": "getrenv",
+                "value": "getrenv()",
+                "meta": "exploit_environment",
+                "score": 1350,
+                "description": "Get Roblox environment"
+            },
+            {
+                "caption": "getsenv",
+                "value": "getsenv($1)",
+                "meta": "exploit_environment",
+                "score": 1300,
+                "description": "Get script environment"
+            },
+            {
+                "caption": "gethui",
+                "value": "gethui()",
+                "meta": "exploit_ui",
+                "score": 1250,
+                "description": "Get hidden UI"
+            },
+            {
+                "caption": "getnilinstances",
+                "value": "getnilinstances()",
+                "meta": "exploit_instance",
+                "score": 1250,
+                "description": "Get nil instances"
+            },
+            {
+                "caption": "getinstances",
+                "value": "getinstances()",
+                "meta": "exploit_instance",
+                "score": 1250,
+                "description": "Get all instances"
+            },
+            {
+                "caption": "getscripts",
+                "value": "getscripts()",
+                "meta": "exploit_script",
+                "score": 1250,
+                "description": "Get all scripts"
+            },
+            {
+                "caption": "getloadedmodules",
+                "value": "getloadedmodules()",
+                "meta": "exploit_module",
+                "score": 1250,
+                "description": "Get loaded modules"
+            },
+            {
+                "caption": "getconnections",
+                "value": "getconnections($1)",
+                "meta": "exploit_event",
+                "score": 1400,
+                "description": "Get event connections"
+            },
+            {
+                "caption": "firesignal",
+                "value": "firesignal($1, $2)",
+                "meta": "exploit_event",
+                "score": 1300,
+                "description": "Fire signal"
+            },
+            {
+                "caption": "fireclickdetector",
+                "value": "fireclickdetector($1)",
+                "meta": "exploit_interaction",
+                "score": 1200,
+                "description": "Fire click detector"
+            },
+            {
+                "caption": "firetouchinterest",
+                "value": "firetouchinterest($1, $2, $3)",
+                "meta": "exploit_interaction",
+                "score": 1200,
+                "description": "Fire touch interest"
+            },
+            {
+                "caption": "setclipboard",
+                "value": "setclipboard($1)",
+                "meta": "exploit_clipboard",
+                "score": 1150,
+                "description": "Set clipboard"
+            },
+            {
+                "caption": "writefile",
+                "value": "writefile(\"$1\", $2)",
+                "meta": "exploit_filesystem",
+                "score": 1250,
+                "description": "Write file"
+            },
+            {
+                "caption": "readfile",
+                "value": "readfile(\"$1\")",
+                "meta": "exploit_filesystem",
+                "score": 1250,
+                "description": "Read file"
+            },
+            {
+                "caption": "loadstring",
+                "value": "loadstring($1)()",
+                "meta": "exploit_execution",
+                "score": 1300,
+                "description": "Load and execute string"
+            },
+            {
+                "caption": "identifyexecutor",
+                "value": "identifyexecutor()",
+                "meta": "exploit_info",
+                "score": 1150,
+                "description": "Identify executor"
+            },
+            {
+                "caption": "saveinstance",
+                "value": "saveinstance($1)",
+                "meta": "exploit_save",
+                "score": 1350,
+                "description": "Save instance"
+            },
+            {
+                "caption": "messagebox",
+                "value": "messagebox(\"$1\", \"$2\", $3)",
+                "meta": "exploit_ui",
+                "score": 1200,
+                "description": "Show message box"
+            }
+        ]
+    },
+    {
+        "category": "exploit_patterns",
+        "keywords": [
+            {
+                "caption": "HttpGet Pattern",
+                "value": "loadstring(game:HttpGet(\"$1\"))()",
+                "meta": "exploit_pattern_http",
+                "score": 1400,
+                "description": "Load script from URL"
+            },
+            {
+                "caption": "Synapse HTTP Pattern",
+                "value": "syn.request({\n    Url = \"$1\",\n    Method = \"GET\"\n})",
+                "meta": "exploit_pattern_synapse",
+                "score": 1350,
+                "description": "Synapse HTTP request"
+            },
+            {
+                "caption": "Protection Check",
+                "value": "if not checkcaller() then return end",
+                "meta": "exploit_pattern_protection",
+                "score": 1450,
+                "description": "Protection check"
+            },
+            {
+                "caption": "Drawing Object",
+                "value": "local $1 = Drawing.new(\"$2\")",
+                "meta": "exploit_pattern_drawing",
+                "score": 1300,
+                "description": "Create drawing object"
+            },
+            {
+                "caption": "Hook Protection",
+                "value": "local old; old = hookmetamethod(game, \"__namecall\", function(self, ...)\n    $1\n    return old(self, ...)\nend)",
+                "meta": "exploit_pattern_hook",
+                "score": 1500,
+                "description": "Hook namecall with protection"
+            },
+            {
+                "caption": "Remote Spy",
+                "value": "for i,v in pairs(getnilinstances()) do\n    if v:IsA(\"RemoteEvent\") or v:IsA(\"RemoteFunction\") then\n        $1\n    end\nend",
+                "meta": "exploit_pattern_spy",
+                "score": 1400,
+                "description": "Find remote events/functions"
+            },
+            {
+                "caption": "Character ESP",
+                "value": "for i,v in pairs(game.Players:GetPlayers()) do\n    if v ~= game.Players.LocalPlayer then\n        $1\n    end\nend",
+                "meta": "exploit_pattern_esp",
+                "score": 1300,
+                "description": "Player iteration for ESP"
+            },
+            {
+                "caption": "Anti-AFK",
+                "value": "game:GetService(\"Players\").LocalPlayer.Idled:Connect(function()\n    game:GetService(\"VirtualUser\"):Button2Down(Vector2.new(0,0), workspace.CurrentCamera.CFrame)\n    wait(1)\n    game:GetService(\"VirtualUser\"):Button2Up(Vector2.new(0,0), workspace.CurrentCamera.CFrame)\nend)",
+                "meta": "exploit_pattern_antiafk",
+                "score": 1250,
+                "description": "Anti-AFK script"
+            },
+            {
+                "caption": "Speed Hack",
+                "value": "local old; old = hookmetamethod(game, \"__namecall\", function(self, ...)\n    local method = getnamecallmethod()\n    if method == \"WalkSpeed\" and self == game.Players.LocalPlayer.Character.Humanoid then\n        return $1\n    end\n    return old(self, ...)\nend)",
+                "meta": "exploit_pattern_speed",
+                "score": 1450,
+                "description": "Speed hack pattern"
+            },
+            {
+                "caption": "Jump Power Hack",
+                "value": "local old; old = hookmetamethod(game, \"__namecall\", function(self, ...)\n    local method = getnamecallmethod()\n    if method == \"JumpPower\" and self == game.Players.LocalPlayer.Character.Humanoid then\n        return $1\n    end\n    return old(self, ...)\nend)",
+                "meta": "exploit_pattern_jump",
+                "score": 1450,
+                "description": "Jump power hack pattern"
+            }
+        ]
+    },
+    {
+        "category": "exploit_constants",
+        "keywords": [
+            {
+                "caption": "SYNAPSE_LOADED",
+                "value": "SYNAPSE_LOADED",
+                "meta": "exploit_constant",
+                "score": 1100,
+                "description": "Synapse loaded constant"
+            },
+            {
+                "caption": "PROTOSMASHER_LOADED",
+                "value": "PROTOSMASHER_LOADED",
+                "meta": "exploit_constant",
+                "score": 1100,
+                "description": "ProtoSmasher loaded constant"
+            },
+            {
+                "caption": "KRNL_LOADED",
+                "value": "KRNL_LOADED",
+                "meta": "exploit_constant",
+                "score": 1100,
+                "description": "KRNL loaded constant"
+            },
+            {
+                "caption": "SIRHURT_LOADED",
+                "value": "SIRHURT_LOADED",
+                "meta": "exploit_constant",
+                "score": 1100,
+                "description": "SirHurt loaded constant"
+            },
+            {
+                "caption": "IDENTITY",
+                "value": "IDENTITY",
+                "meta": "exploit_constant",
+                "score": 1050,
+                "description": "Identity constant"
+            },
+            {
+                "caption": "HIDDEN_IDENTITY",
+                "value": "HIDDEN_IDENTITY",
+                "meta": "exploit_constant",
+                "score": 1050,
+                "description": "Hidden identity constant"
+            }
+        ]
+    },
+    {
+        "category": "debug_keywords",
+        "keywords": [
+            {
+                "caption": "debug.getupvalue",
+                "value": "debug.getupvalue($1, $2)",
+                "meta": "debug_function",
+                "score": 1350,
+                "description": "Get function upvalue"
+            },
+            {
+                "caption": "debug.setupvalue",
+                "value": "debug.setupvalue($1, $2, $3)",
+                "meta": "debug_function",
+                "score": 1350,
+                "description": "Set function upvalue"
+            },
+            {
+                "caption": "debug.getconstant",
+                "value": "debug.getconstant($1, $2)",
+                "meta": "debug_function",
+                "score": 1350,
+                "description": "Get function constant"
+            },
+            {
+                "caption": "debug.setconstant",
+                "value": "debug.setconstant($1, $2, $3)",
+                "meta": "debug_function",
+                "score": 1350,
+                "description": "Set function constant"
+            },
+            {
+                "caption": "debug.getinfo",
+                "value": "debug.getinfo($1)",
+                "meta": "debug_function",
+                "score": 1300,
+                "description": "Get function info"
+            },
+            {
+                "caption": "debug.traceback",
+                "value": "debug.traceback()",
+                "meta": "debug_function",
+                "score": 1250,
+                "description": "Get traceback"
+            },
+            {
+                "caption": "debug.getregistry",
+                "value": "debug.getregistry()",
+                "meta": "debug_function",
+                "score": 1250,
+                "description": "Get registry"
+            },
+            {
+                "caption": "debug.getlocal",
+                "value": "debug.getlocal($1, $2)",
+                "meta": "debug_function",
+                "score": 1300,
+                "description": "Get local variable"
+            },
+            {
+                "caption": "debug.setlocal",
+                "value": "debug.setlocal($1, $2, $3)",
+                "meta": "debug_function",
+                "score": 1300,
+                "description": "Set local variable"
+            }
+        ]
+    },
+    {
+        "category": "quick_templates",
+        "keywords": [
+            {
+                "caption": "Quick Script Loader",
+                "value": "local scriptUrl = \"$1\"\nlocal success, result = pcall(function()\n    loadstring(game:HttpGet(scriptUrl))()\nend)\nif not success then\n    warn(\"Failed to load script:\", result)\nend",
+                "meta": "template_loader",
+                "score": 1400
+            },
+            {
+                "caption": "GUI Library Template",
+                "value": "local library = {}\n\nfunction library:CreateWindow(title)\n    local window = {}\n    -- GUI creation code here\n    return window\nend\n\nreturn library",
+                "meta": "template_gui",
+                "score": 1350
+            },
+            {
+                "caption": "Module Template",
+                "value": "local module = {}\n\nfunction module.Init()\n    -- Initialization code\nend\n\nfunction module:Method()\n    -- Method code\nend\n\nreturn module",
+                "meta": "template_module",
+                "score": 1300
+            }
+        ]
+    }
+]
